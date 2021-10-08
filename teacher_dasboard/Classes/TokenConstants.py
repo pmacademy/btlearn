@@ -10,4 +10,5 @@ class TokenConstants:
     USER_ID = "user_id"
     ENCODING_ALGORITHM = "RS256"
 class ErrorMessage:
-    INVALID_TOKEN_MESSAGE="INVALID_TOKEN"
+    EXPIRED_TOKEN_MESSAGE='Token expired'
+    INVALID_TOKEN_MESSAGE="Invalid token"

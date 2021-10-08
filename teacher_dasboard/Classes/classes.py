@@ -38,9 +38,10 @@ async def create_class(request:Request,name:str, db: Session = Depends(get_db)):
     if auth_header:
         auth_token = auth_header.split(" ")[1]
     else:
-        auth_token = None
+        auth_token=None
     if auth_token is not None:
         teacher_id=token_service.decode_token(auth_token)['user_id']
+        print(teacher_id)
     else:
         responseObject = {
                     'status': 'fail',
