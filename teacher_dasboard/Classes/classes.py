@@ -70,6 +70,35 @@ async def get_classes_by_teacher_id(request:Request, db: Session = Depends(get_d
     return classes
 
 
+@router.get("/api/v1/classes/all/details")
+async def get_all_classes_and_all_students(request:Request, db: Session = Depends(get_db)):
+    auth_header=request.headers.get('Authorization')
+    if auth_header:
+        auth_token = auth_header.split(" ")[1]
+    else:
+        auth_token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MzM5MzU3OTQsImV4cCI6MTYzMzkzNjM5NCwidXNlcl9pZCI6IjAzNzViNzA0LTkxYjItNGZmNi1hZmNhLTg0MThkNTRlMGQ5ZCIsImVtYWlsIjoia3VuZGFuLmt1bWFyQGJ5dGVsZWFybi5haSIsImRpc3BsYXlfbmFtZSI6Ikt1bmRhbiBLdW1hciIsImZ1bGxfbmFtZSI6Ikt1bmRhbiBLdW1hciIsInByb2ZpbGVfaW1hZ2UiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQU9oMTRHaEtxN1BUbjZiOFNWdWRpOXBVcVlTYjdjNVRMd0h3a1RqTVYtSDI9czk2LWMiLCJkZWZhdWx0X3JvbGUiOiJ0ZWFjaGVyIiwicm9sZXMiOlsidGVhY2hlciJdfQ.XJXDTH-bF7tusUlr8-jZS-tICvMIkYe7LwqfYE6Cksmgb8sYbiv3_0Lt0_rCkbkzQhYLFOq_F_0973Lip4T7CE_lDWP2C3pyv2my0IaW4O7OSyqtvafhd7i8ZckgkTX7FxQaJHejXhxjrEjUrRWA8ePibpXEVUaWM2fHAUrsZvvmPHRublagFaM4kusYRt1nfhylBkL-zk8xbTynYI7amFNdVH9Prb5Bqjzd89XYmynY8mmy8_u2eg1TTTMLqRrOAc1RKUuWO5ZaQueacCgsL5mvVayZjMoICCsaiQuXTPqaAEcXzo0oJSCwwT_BwC0uUdXvNmyAND-gVmH_0imP9BGXqhfTa4KpetXGSkeLumgjhd9QNLAPLqb5rQ27lZ6AJ6JJtSghjPdq4k8vfvg7yEfB_QhiwKVokcRPz8GI5S0twGCQcIS1kMjsvaqgHo1L83mATteNbdkHCroc3XAf6HkVTMTP1lCEZdQL89qyqUDFj0AGNnb7gPit18wgcRLtW1iJOx2DUg2JScZwsOGXsGteku6RIPC8oc9xKfFLgRNiwSfzwOQbi2SAwCfomFCizna_1BXOr9iR3j_Ae2uBJJhbDsrIIFkpXaqcZPey0s2qPdzGjsQwsWGnQDnjJ4C99W4k9iTixiqAwEoAccAehuXYHbCetmpjQHKu-dWiIA0'
+    if auth_token is not None:
+        teacher_id=token_service.decode_token(auth_token)['user_id']
+    else:
+        responseObject = {
+                    'status': 'fail',
+                    'message': 'Provide a valid auth token.'
+                }
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=responseObject)
+    classes = class_crud.get_my_classes(db=db,teacher_id=teacher_id)
+    responseObject=[]
+    for _class in classes:
+        students=student_crud.get_students_by_class(db,_class.id)
+        _students=[]
+        class_dict=_class.__dict__
+        for student in students:
+            student.__delattr__('password')
+            _students.append(student)
+        class_dict['students']=_students
+        responseObject.append(class_dict)
+    return responseObject
+
+
 @router.get("/api/v1/classes/id={class_id}", response_model=schemas.Classes )
 async def get_class_by_class_id(class_id: int, db: Session = Depends(get_db)):
     db_class = class_crud.get_class_by_id(db, class_id)
@@ -330,3 +359,4 @@ async def del_class(request:Request,class_id: int, db: Session = Depends(get_db)
     else:
         raise HTTPException(status_code=500, detail='Invalid Request')
     return {"message": str(affected_rows)+" Class deleted."}
+

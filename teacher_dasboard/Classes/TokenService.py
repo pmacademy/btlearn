@@ -8,7 +8,6 @@ from fastapi import Security, status
 from teacher_dasboard.Classes.TokenConstants import TokenConstants, ErrorMessage
 from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives import serialization as crypto_serialization
-from teacher_dasboard.Classes.User import User
 
 class TokenService:
 
