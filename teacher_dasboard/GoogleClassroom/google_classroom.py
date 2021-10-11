@@ -7,7 +7,7 @@ from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.oauth2.credentials import Credentials
 from sqlalchemy.orm import Session
-from teacher_dasboard.Classes import class_crud,TokenService
+from teacher_dasboard.Classes import class_crud,TokenDependency
 from teacher_dasboard.Students import student_crud
 from teacher_dasboard.database import SessionLocal, engine
 from teacher_dasboard import models
@@ -21,7 +21,7 @@ from starlette import status
 
 # If modifying these scopes, delete the file token.json.
 SCOPES = ['https://www.googleapis.com/auth/classroom.courses.readonly', 'https://www.googleapis.com/auth/classroom.rosters.readonly']
-token_service=TokenService.TokenService()
+token_dependency=TokenDependency.token_dependency
 router = APIRouter(
     tags=["Classes"],
     responses={500: {"description": "Not found"}},
@@ -127,23 +127,8 @@ def google_classroom_courses(teacher_id:str,fetch_students:bool, db: Session = D
     return courses_list
    
 
-@router.get('/api/v1/classes/gclassroom/list/all')
-async def list_google_courses(request:Request,db: Session = Depends(get_db)):
-
-    auth_header=request.headers.get('Authorization')
-    if auth_header:
-        auth_token = auth_header.split(" ")[1]
-    else:
-        auth_token=None
-    if auth_token is not None:
-        teacher_id=token_service.decode_token(auth_token)['user_id']
-        print(teacher_id)
-    else:
-        responseObject = {
-                    'status': 'fail',
-                    'message': 'Provide a valid auth token.'
-                }
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=responseObject)
+@router.get('/api/v1/classes/gclassroom/list/all', dependencies=[Depends(token_dependency.validate_token),Depends(token_dependency.role_teacher)])
+async def list_google_courses(teacher_id:str = Depends(token_dependency.get_user_id ),db: Session = Depends(get_db)):
     
     courses_list = google_classroom_courses(teacher_id,db=db,fetch_students=False)
     if len(courses_list) == 0:
@@ -151,26 +136,9 @@ async def list_google_courses(request:Request,db: Session = Depends(get_db)):
     return courses_list
 
 
-@router.post('/api/v1/classes/gclassroom/connect/selected')
-async def connect_google_courses(request:Request, course_ids: Optional[List[str]]=Query(None), db: Session = Depends(get_db)):
+@router.post('/api/v1/classes/gclassroom/connect/selected', dependencies=[Depends(token_dependency.validate_token),Depends(token_dependency.role_teacher)])
+async def connect_google_courses(teacher_id:str = Depends(token_dependency.get_user_id ), course_ids: Optional[List[str]]=Query(None), db: Session = Depends(get_db)):
     
-    if course_ids == None:
-        return
-    auth_header=request.headers.get('Authorization')
-    if auth_header:
-        auth_token = auth_header.split(" ")[1]
-    else:
-        auth_token=None
-    if auth_token is not None:
-        teacher_id=token_service.decode_token(auth_token)['user_id']
-        print(teacher_id)
-    else:
-        responseObject = {
-                    'status': 'fail',
-                    'message': 'Provide a valid auth token.'
-                }
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=responseObject)
-
     courses_list = google_classroom_courses(teacher_id,db=db,fetch_students=True)
     if len(course_ids)==0:
         return {"message":"No class selected"}

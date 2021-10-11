@@ -7,16 +7,16 @@ from fastapi.param_functions import Query
 from sqlalchemy.orm import Session
 from sqlalchemy.sql.expression import true
 from starlette import status
-from  teacher_dasboard import models, schemas
-from  teacher_dasboard.database import SessionLocal, engine
-from teacher_dasboard.Classes import class_crud,TokenService
+from teacher_dasboard import models, schemas
+from teacher_dasboard.database import SessionLocal, engine
+from teacher_dasboard.Classes import class_crud,TokenDependency
 from teacher_dasboard.Students import student_crud
 import pandas as pd
 import re
 
 regex = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 models.Base.metadata.create_all(bind=engine)
-token_service=TokenService.TokenService()
+token_dependency = TokenDependency.token_dependency
 
 router = APIRouter(
     tags=["Classes"],
@@ -31,60 +31,30 @@ def get_db():
     finally:
         db.close()
 
+def check(email):
+    if(re.fullmatch(regex, email)):
+        return True
+    return False
+    
+def generate_password(length: int):
+    letters=string.ascii_letters
+    password = ''.join(random.choice(letters) for i in range(length))
+    return password
 
-@router.post("/api/v1/classes/")
-async def create_class(request:Request,name:str, db: Session = Depends(get_db)):
-    auth_header=request.headers.get('Authorization')
-    if auth_header:
-        auth_token = auth_header.split(" ")[1]
-    else:
-        auth_token=None
-    if auth_token is not None:
-        teacher_id=token_service.decode_token(auth_token)['user_id']
-        print(teacher_id)
-    else:
-        responseObject = {
-                    'status': 'fail',
-                    'message': 'Provide a valid auth token.'
-                }
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=responseObject)
+
+@router.post("/api/v1/classes/", dependencies=[Depends(token_dependency.validate_token),Depends(token_dependency.role_teacher)])
+async def create_class( name:str, teacher_id:str = Depends(token_dependency.get_user_id ), db: Session = Depends(get_db)):
     Class=schemas.ClassesCreate(name=name,teacher_id=teacher_id)
     return class_crud.create_class(db=db, Class=Class)
 
-@router.get("/api/v1/classes/all")
-async def get_classes_by_teacher_id(request:Request, db: Session = Depends(get_db)):
-    auth_header=request.headers.get('Authorization')
-    if auth_header:
-        auth_token = auth_header.split(" ")[1]
-    else:
-        auth_token = None
-    if auth_token is not None:
-        teacher_id=token_service.decode_token(auth_token)['user_id']
-    else:
-        responseObject = {
-                    'status': 'fail',
-                    'message': 'Provide a valid auth token.'
-                }
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=responseObject)
+@router.get("/api/v1/classes/all", dependencies=[Depends(token_dependency.validate_token),Depends(token_dependency.role_teacher)])
+async def get_classes_by_teacher_id(teacher_id:str = Depends(token_dependency.get_user_id ), db: Session = Depends(get_db)):
     classes = class_crud.get_my_classes(db=db,teacher_id=teacher_id)
     return classes
 
 
-@router.get("/api/v1/classes/all/details")
-async def get_all_classes_and_all_students(request:Request, db: Session = Depends(get_db)):
-    auth_header=request.headers.get('Authorization')
-    if auth_header:
-        auth_token = auth_header.split(" ")[1]
-    else:
-        auth_token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2MzM5MzU3OTQsImV4cCI6MTYzMzkzNjM5NCwidXNlcl9pZCI6IjAzNzViNzA0LTkxYjItNGZmNi1hZmNhLTg0MThkNTRlMGQ5ZCIsImVtYWlsIjoia3VuZGFuLmt1bWFyQGJ5dGVsZWFybi5haSIsImRpc3BsYXlfbmFtZSI6Ikt1bmRhbiBLdW1hciIsImZ1bGxfbmFtZSI6Ikt1bmRhbiBLdW1hciIsInByb2ZpbGVfaW1hZ2UiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQU9oMTRHaEtxN1BUbjZiOFNWdWRpOXBVcVlTYjdjNVRMd0h3a1RqTVYtSDI9czk2LWMiLCJkZWZhdWx0X3JvbGUiOiJ0ZWFjaGVyIiwicm9sZXMiOlsidGVhY2hlciJdfQ.XJXDTH-bF7tusUlr8-jZS-tICvMIkYe7LwqfYE6Cksmgb8sYbiv3_0Lt0_rCkbkzQhYLFOq_F_0973Lip4T7CE_lDWP2C3pyv2my0IaW4O7OSyqtvafhd7i8ZckgkTX7FxQaJHejXhxjrEjUrRWA8ePibpXEVUaWM2fHAUrsZvvmPHRublagFaM4kusYRt1nfhylBkL-zk8xbTynYI7amFNdVH9Prb5Bqjzd89XYmynY8mmy8_u2eg1TTTMLqRrOAc1RKUuWO5ZaQueacCgsL5mvVayZjMoICCsaiQuXTPqaAEcXzo0oJSCwwT_BwC0uUdXvNmyAND-gVmH_0imP9BGXqhfTa4KpetXGSkeLumgjhd9QNLAPLqb5rQ27lZ6AJ6JJtSghjPdq4k8vfvg7yEfB_QhiwKVokcRPz8GI5S0twGCQcIS1kMjsvaqgHo1L83mATteNbdkHCroc3XAf6HkVTMTP1lCEZdQL89qyqUDFj0AGNnb7gPit18wgcRLtW1iJOx2DUg2JScZwsOGXsGteku6RIPC8oc9xKfFLgRNiwSfzwOQbi2SAwCfomFCizna_1BXOr9iR3j_Ae2uBJJhbDsrIIFkpXaqcZPey0s2qPdzGjsQwsWGnQDnjJ4C99W4k9iTixiqAwEoAccAehuXYHbCetmpjQHKu-dWiIA0'
-    if auth_token is not None:
-        teacher_id=token_service.decode_token(auth_token)['user_id']
-    else:
-        responseObject = {
-                    'status': 'fail',
-                    'message': 'Provide a valid auth token.'
-                }
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=responseObject)
+@router.get("/api/v1/classes/all/details", dependencies=[Depends(token_dependency.validate_token),Depends(token_dependency.role_teacher)])
+async def get_all_classes_and_all_students(teacher_id:str = Depends(token_dependency.get_user_id ), db: Session = Depends(get_db)):
     classes = class_crud.get_my_classes(db=db,teacher_id=teacher_id)
     responseObject=[]
     for _class in classes:
@@ -121,22 +91,9 @@ async def get_class_by_name(name: str, db: Session = Depends(get_db)):
     return db_class
 
 
-@router.get("/api/v1/classes/{class_id}/students/all" )
-async def get_students(request:Request,class_id: int, db: Session = Depends(get_db)):
-    auth_header=request.headers.get('Authorization')
-    if auth_header:
-        auth_token = auth_header.split(" ")[1]
-    else:
-        auth_token = None
-    if auth_token is not None:
-        teacher_id=token_service.decode_token(auth_token)['user_id']
-    else:
-        responseObject = {
-                    'status': 'fail',
-                    'message': 'Provide a valid auth token.'
-                }
-        raise HTTPException(status_code=500,detail=responseObject)
-        
+@router.get("/api/v1/classes/{class_id}/students/all" , dependencies=[Depends(token_dependency.validate_token),Depends(token_dependency.role_teacher)])
+async def get_students(class_id: int, teacher_id:str = Depends(token_dependency.get_user_id ), db: Session = Depends(get_db)):
+  
     if class_crud.get_teachers_class(db,teacher_id,class_id) is not None:
         db_students = student_crud.get_students_by_class(db, class_id=class_id)
         if db_students is None:
@@ -145,56 +102,16 @@ async def get_students(request:Request,class_id: int, db: Session = Depends(get_
     else:
         raise HTTPException(status_code=500, detail='Invalid Request')
 
-@router.delete("/api/v1/classes/{class_id}/students/delete/{student_id}")
-async def del_student(request:Request,class_id: int,student_id=int, db: Session = Depends(get_db)):
-    auth_header=request.headers.get('Authorization')
-    if auth_header:
-        auth_token = auth_header.split(" ")[1]  
-    else:
-        auth_token = None
-    if auth_token is not None:
-        teacher_id=token_service.decode_token(auth_token)['user_id']
-    else:
-        responseObject = {
-                    'status': 'fail',
-                    'message': 'Provide a valid auth token.'
-                }
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=responseObject)
-    
+@router.delete("/api/v1/classes/{class_id}/students/delete/{student_id}", dependencies=[Depends(token_dependency.validate_token),Depends(token_dependency.role_teacher)])
+async def del_student(class_id: int, student_id=int, teacher_id:str = Depends(token_dependency.get_user_id ), db: Session = Depends(get_db)):
     if class_crud.get_teachers_class(db=db,teacher_id=teacher_id,class_id=class_id) is not None:
         affected_rows = student_crud.delete_class_student(db, class_id=class_id,student_id=student_id)
     else:
         raise HTTPException(status_code=500, detail='Invalid Request')
     return {"message": str(affected_rows)+" Students deleted."}
 
-
-def check(email):
-    # pass the regular expression
-    if(re.fullmatch(regex, email)):
-        return True
-    return False
-    
-def generate_password(length: int):
-    letters=string.ascii_letters
-    password = ''.join(random.choice(letters) for i in range(length))
-    return password
-
-@router.put("/api/v1/classes/upload/spreadsheet")
-async def upload_student_spreadsheet_to_selected_classes(request:Request,class_id: Optional[List[str]]=Query(None), file: UploadFile = File( default="abc.csv"), db: Session = Depends(get_db)):
-    auth_header=request.headers.get('Authorization')
-    if auth_header:
-        auth_token = auth_header.split(" ")[1]
-    else:
-        auth_token = None
-    if auth_token is not None:
-        teacher_id=token_service.decode_token(auth_token)['user_id']
-    else:
-        responseObject = {
-                    'status': 'fail',
-                    'message': 'Provide a valid auth token.'
-                }
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=responseObject)
-
+@router.put("/api/v1/classes/upload/spreadsheet", dependencies=[Depends(token_dependency.validate_token),Depends(token_dependency.role_teacher)])
+async def upload_student_spreadsheet_to_selected_classes(teacher_id:str = Depends(token_dependency.get_user_id ),class_id: Optional[List[str]]=Query(None), file: UploadFile = File( default="abc.csv"), db: Session = Depends(get_db)):
     extension=file.content_type
     if extension not in ['text/csv','application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'] :
         raise HTTPException(status_code=500, detail='Uploaded file is not a spreadsheet')
@@ -265,22 +182,8 @@ async def upload_student_spreadsheet_to_selected_classes(request:Request,class_i
     return response
 
 
-@router.post("/api/v1/classes/upload/spreadsheet")
-async def create_class_and_upload_spreadsheet(class_name: str,request:Request, file: UploadFile = File( default="abc.csv"), db: Session = Depends(get_db)):
-    auth_header=request.headers.get('Authorization')
-    if auth_header:
-        auth_token = auth_header.split(" ")[1]
-    else:
-        auth_token = None
-    if auth_token is not None:
-        teacher_id=token_service.decode_token(auth_token)['user_id']
-    else:
-        responseObject = {
-                    'status': 'fail',
-                    'message': 'Provide a valid auth token.'
-                }
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=responseObject)
-
+@router.post("/api/v1/classes/upload/spreadsheet", dependencies=[Depends(token_dependency.validate_token),Depends(token_dependency.role_teacher)])
+async def create_class_and_upload_spreadsheet(class_name: str,teacher_id:str = Depends(token_dependency.get_user_id ), file: UploadFile = File( default="abc.csv"), db: Session = Depends(get_db)):
     extension=file.content_type
     if extension not in ['text/csv','application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'] :
         raise HTTPException(status_code=500, detail='Uploaded file is not a spreadsheet')
@@ -338,22 +241,9 @@ async def create_class_and_upload_spreadsheet(class_name: str,request:Request, f
     return response
 
 
-@router.delete("/api/v1/classes/delete/{class_id}" )
-async def del_class(request:Request,class_id: int, db: Session = Depends(get_db)):
+@router.delete("/api/v1/classes/delete/{class_id}" , dependencies=[Depends(token_dependency.validate_token),Depends(token_dependency.role_teacher)])
+async def del_class(class_id: int, teacher_id:str = Depends(token_dependency.get_user_id ), db: Session = Depends(get_db)):
 
-    auth_header=request.headers.get('Authorization')
-    if auth_header:
-        auth_token = auth_header.split(" ")[1]
-    else:
-        auth_token = None
-    if auth_token is not None:
-        teacher_id=token_service.decode_token(auth_token)['user_id']
-    else:
-        responseObject = {
-                    'status': 'fail',
-                    'message': 'Provide a valid auth token.'
-                }
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=responseObject)
     if class_crud.get_teachers_class(db,teacher_id,class_id) is not None:
         affected_rows = class_crud.delete_class(db, class_id=class_id)
     else:

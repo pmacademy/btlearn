@@ -29,9 +29,4 @@ class TokenService:
                 detail=ErrorMessage.INVALID_TOKEN_MESSAGE)
 
 
-# token_service = TokenService()
-# user = User(uuid='g8y8hiug6erdt5edrd',email='gfh@jkh.jiu',display_name="jgu hiuh")
-# token=token_service.encode_token(user=user)
-# print(token)
-# if __name__=="__main__":
-#     print(token_service.decode_token(token))
+token_service = TokenService()
