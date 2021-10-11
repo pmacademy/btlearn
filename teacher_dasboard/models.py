@@ -6,10 +6,11 @@ from teacher_dasboard.database import Base
 
 class Classes(Base):
 
-    __tablename__ = "classes"
+    __tablename__ = "test_classes"
 
     id = Column(Integer, primary_key=True, autoincrement=True, index=True)
     google_id = Column(String(250))
+    source=Column(String(50))
     status = Column(String(50))
     name = Column(String(50))
     code = Column(String(6), unique=True)
@@ -20,14 +21,15 @@ class Classes(Base):
 
 class Students(Base):
 
-    __tablename__ = "class_students"
+    __tablename__ = "test_class_students"
 
     id = Column(Integer, primary_key=True, autoincrement=True, index=True)
+    uuid=Column(String(250))
     first_name = Column(String(50))
     last_name=Column(String(50))
     email = Column(String(50))
     password = Column(String(100))
     parents_email = Column(String(50))
-    class_id=Column(Integer, ForeignKey("classes.id",ondelete='CASCADE'))
+    class_id=Column(Integer, ForeignKey("test_classes.id",ondelete='CASCADE'))
 
     

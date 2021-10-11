@@ -43,7 +43,7 @@ def create_class(db: Session, Class: schemas.ClassesCreate):
         db_class = get_class_by_code(db, class_code=class_code)
     
     created_at=datetime.datetime.now()
-    db_class = models.Classes(name=Class.name,google_id="", teacher_id=Class.teacher_id,code=class_code,created_at=created_at,updated_at=created_at,status='manual',student_count=0)
+    db_class = models.Classes(source='manual',name=Class.name,google_id="", teacher_id=Class.teacher_id,code=class_code,created_at=created_at,updated_at=created_at,status=" ",student_count=0)
     
     db.add(db_class)
     db.commit()
@@ -82,7 +82,7 @@ def connect_google_class(db:Session, Class: schemas.GoogleClass):
         db_class = get_class_by_code(db, class_code=class_code)
     
     created_at=datetime.datetime.now()
-    db_class = models.Classes(google_id=Class.google_id,name=Class.name, teacher_id=Class.teacher_id,code=class_code,created_at=created_at,updated_at=created_at,status='connected',student_count=0)
+    db_class = models.Classes(source='google_classroom',google_id=Class.google_id,name=Class.name, teacher_id=Class.teacher_id,code=class_code,created_at=created_at,updated_at=created_at,status='connected',student_count=0)
     
     db.add(db_class)
     db.commit()

@@ -42,7 +42,7 @@ def generate_password(length: int):
     return password
 
 
-@router.post("/api/v1/classes/", dependencies=[Depends(token_dependency.validate_token),Depends(token_dependency.role_teacher)])
+@router.post("/api/v1/classes", dependencies=[Depends(token_dependency.validate_token),Depends(token_dependency.role_teacher)])
 async def create_class( name:str, teacher_id:str = Depends(token_dependency.get_user_id ), db: Session = Depends(get_db)):
     Class=schemas.ClassesCreate(name=name,teacher_id=teacher_id)
     return class_crud.create_class(db=db, Class=Class)
@@ -97,17 +97,17 @@ async def get_students(class_id: int, teacher_id:str = Depends(token_dependency.
     if class_crud.get_teachers_class(db,teacher_id,class_id) is not None:
         db_students = student_crud.get_students_by_class(db, class_id=class_id)
         if db_students is None:
-            raise HTTPException(status_code=500, detail="No students found")
+            raise HTTPException(status_code=404, detail="No students found")
         return db_students
     else:
-        raise HTTPException(status_code=500, detail='Invalid Request')
+        raise HTTPException(status_code=401, detail='Invalid Request')
 
 @router.delete("/api/v1/classes/{class_id}/students/delete/{student_id}", dependencies=[Depends(token_dependency.validate_token),Depends(token_dependency.role_teacher)])
 async def del_student(class_id: int, student_id=int, teacher_id:str = Depends(token_dependency.get_user_id ), db: Session = Depends(get_db)):
     if class_crud.get_teachers_class(db=db,teacher_id=teacher_id,class_id=class_id) is not None:
         affected_rows = student_crud.delete_class_student(db, class_id=class_id,student_id=student_id)
     else:
-        raise HTTPException(status_code=500, detail='Invalid Request')
+        raise HTTPException(status_code=401, detail='Invalid Request')
     return {"message": str(affected_rows)+" Students deleted."}
 
 @router.put("/api/v1/classes/upload/spreadsheet", dependencies=[Depends(token_dependency.validate_token),Depends(token_dependency.role_teacher)])
@@ -247,6 +247,6 @@ async def del_class(class_id: int, teacher_id:str = Depends(token_dependency.get
     if class_crud.get_teachers_class(db,teacher_id,class_id) is not None:
         affected_rows = class_crud.delete_class(db, class_id=class_id)
     else:
-        raise HTTPException(status_code=500, detail='Invalid Request')
+        raise HTTPException(status_code=401, detail='Invalid Request')
     return {"message": str(affected_rows)+" Class deleted."}
 

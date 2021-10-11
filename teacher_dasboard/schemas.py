@@ -24,6 +24,7 @@ class GoogleClass(ClassesBase):
 
 class Classes(ClassesBase):
     id: int
+    source:str
     google_id: str
     status: str
     code : str
@@ -55,6 +56,7 @@ class StudentsCreate(StudentsBase):
 class Students(StudentsBase):
     
     id: int
+    uuid:str
     email: str
     parents_email : str
     password: str

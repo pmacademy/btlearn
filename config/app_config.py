@@ -28,4 +28,4 @@ def get_config() -> Configurations:
     if(os.getenv("ENV", None) == "DEV"):
         return Configurations(_env_file=os.path.join(config_dir,'dev.env'))
     else:
-        return Configurations(_env_file=os.path.join(config_dir,'dev.env'))
+        return Configurations(_env_file=os.path.join(config_dir,'.env'))

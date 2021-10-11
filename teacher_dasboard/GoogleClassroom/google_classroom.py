@@ -36,7 +36,7 @@ def get_db():
         db.close()
 
 
-dummy_email='abc@xyz.com'
+dummy_email='@xyz.com'
 
 base_dir = Path(__file__).resolve().parent
 cred_path = os.path.join(base_dir,'credentials.json')
@@ -118,7 +118,7 @@ def google_classroom_courses(teacher_id:str,fetch_students:bool, db: Session = D
             #TODO
             # get email from the student profile
 
-            student_dict['email']=dummy_email
+            student_dict['email']=student_dict['firstname'].lower()+dummy_email
             allStudents.append(student_dict)
 
         courses_list[-1]['students']=allStudents 
@@ -159,6 +159,7 @@ async def connect_google_courses(teacher_id:str = Depends(token_dependency.get_u
 
         class_dict={}
         class_dict['id'] = _class.id
+        class_dict['source'] = 'google_classroom'
         class_dict['google_id']=course['google_id']
         class_dict['status'] = course ['status']
         class_dict['name'] = _class.name
