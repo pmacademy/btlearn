@@ -1,0 +1,380 @@
+2021-12-22 05:33:24 India Standard Time, uvicorn.error, 14992, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [14992]
+2021-12-22 05:33:24 India Standard Time, uvicorn.error, 14992, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-22 05:33:24 India Standard Time, uvicorn.error, 14992, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-22 05:33:24 India Standard Time, uvicorn.error, 14992, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://0.0.0.0:5000 (Press CTRL+C to quit)
+2021-12-22 05:33:27 India Standard Time, uvicorn.error, 14992, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-22 05:33:28 India Standard Time, uvicorn.error, 14992, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-22 05:33:28 India Standard Time, uvicorn.error, 14992, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-22 05:33:28 India Standard Time, uvicorn.error, 14992, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [14992]
+2021-12-22 11:29:29 India Standard Time, uvicorn.error, 13636, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [13636]
+2021-12-22 11:29:29 India Standard Time, uvicorn.error, 13636, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-22 11:29:29 India Standard Time, uvicorn.error, 13636, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-22 11:29:29 India Standard Time, uvicorn.error, 13636, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-22 11:35:31 India Standard Time, uvicorn.error, 12560, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [12560]
+2021-12-22 11:35:31 India Standard Time, uvicorn.error, 12560, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-22 11:35:31 India Standard Time, uvicorn.error, 12560, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-22 11:35:31 India Standard Time, uvicorn.error, 12560, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-22 11:39:33 India Standard Time, uvicorn.error, 19996, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [19996]
+2021-12-22 11:39:33 India Standard Time, uvicorn.error, 19996, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-22 11:39:33 India Standard Time, uvicorn.error, 19996, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-22 11:39:33 India Standard Time, uvicorn.error, 19996, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-22 11:43:52 India Standard Time, uvicorn.error, 24060, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [24060]
+2021-12-22 11:43:52 India Standard Time, uvicorn.error, 24060, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-22 11:43:52 India Standard Time, uvicorn.error, 24060, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-22 11:43:52 India Standard Time, uvicorn.error, 24060, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-22 11:44:08 India Standard Time, google_auth_oauthlib.flow, 24060, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\google_auth_oauthlib\flow.py, lineno=494, request_span_id=4XAF5ITTID , message="GET /?state=pUYAyFPhUpJ69alShO890W76GqBRNk&code=4/0AX4XfWjD8-b_fjfQavFvtv8NcR4VpQOxZEu9G9RfPPNd_r8HypIOdAEoEIFpDByd5-EBKA&scope=https://www.googleapis.com/auth/classroom.rosters.readonly%20https://www.googleapis.com/auth/classroom.courses.readonly HTTP/1.1" 200 65
+2021-12-22 11:44:09 India Standard Time, googleapiclient.discovery_cache, 24060, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\googleapiclient\discovery_cache\__init__.py, lineno=49, request_span_id=4XAF5ITTID , message=file_cache is only supported with oauth2client<4.0.0
+2021-12-22 11:44:48 India Standard Time, google_auth_oauthlib.flow, 24060, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\google_auth_oauthlib\flow.py, lineno=494, request_span_id=CFPP0SCW9M , message="GET /?state=fpZ6Aul7jLyNLfhBSmWKUWJeGwVU46&code=4%2F0AX4XfWj_8J7EyveZG4ahQw6jobBikBjQFMbntwO4byUv1omqx9PNxIkMdwJbz52B2h4cTw&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.courses.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.rosters.readonly HTTP/1.1" 200 65
+2021-12-22 11:44:49 India Standard Time, googleapiclient.discovery_cache, 24060, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\googleapiclient\discovery_cache\__init__.py, lineno=49, request_span_id=CFPP0SCW9M , message=file_cache is only supported with oauth2client<4.0.0
+2021-12-22 11:48:35 India Standard Time, uvicorn.error, 24060, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-22 11:48:35 India Standard Time, uvicorn.error, 24060, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-22 11:48:35 India Standard Time, uvicorn.error, 24060, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-22 11:48:35 India Standard Time, uvicorn.error, 24060, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [24060]
+2021-12-22 11:49:19 India Standard Time, uvicorn.error, 21340, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [21340]
+2021-12-22 11:49:19 India Standard Time, uvicorn.error, 21340, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-22 11:49:19 India Standard Time, uvicorn.error, 21340, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-22 11:49:19 India Standard Time, uvicorn.error, 21340, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-22 11:49:29 India Standard Time, google_auth_oauthlib.flow, 21340, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\google_auth_oauthlib\flow.py, lineno=494, request_span_id=XMCT9950B4 , message="GET /?state=6g9aApeYpo1L2EbyfLmTyPl4yhiDhb&code=4%2F0AX4XfWiB3nLav5nxp-H3OtCnY2CzFko0ZS0EPhgJijZb1Znev14583QPBT5n3ZnvxRNULg&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.courses.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.rosters.readonly HTTP/1.1" 200 65
+2021-12-22 11:49:29 India Standard Time, googleapiclient.discovery_cache, 21340, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\googleapiclient\discovery_cache\__init__.py, lineno=49, request_span_id=XMCT9950B4 , message=file_cache is only supported with oauth2client<4.0.0
+2021-12-22 11:50:05 India Standard Time, uvicorn.error, 21340, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-22 11:50:05 India Standard Time, uvicorn.error, 21340, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-22 11:50:05 India Standard Time, uvicorn.error, 21340, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-22 11:50:05 India Standard Time, uvicorn.error, 21340, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [21340]
+2021-12-22 11:50:47 India Standard Time, uvicorn.error, 15744, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [15744]
+2021-12-22 11:50:47 India Standard Time, uvicorn.error, 15744, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-22 11:50:47 India Standard Time, uvicorn.error, 15744, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-22 11:50:47 India Standard Time, uvicorn.error, 15744, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-22 11:50:56 India Standard Time, google_auth_oauthlib.flow, 15744, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\google_auth_oauthlib\flow.py, lineno=494, request_span_id=X153IAOM84 , message="GET /?state=NfF2c0pF9oc9Geg9GW5TDa71lfvNqy&code=4%2F0AX4XfWjf14SYTM29oE3hXBWkp0noAnKTFnC6yOjqiegTt7_bOi50VbMunhHPKvkw86pYPA&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.courses.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.rosters.readonly HTTP/1.1" 200 65
+2021-12-22 11:50:56 India Standard Time, googleapiclient.discovery_cache, 15744, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\googleapiclient\discovery_cache\__init__.py, lineno=49, request_span_id=X153IAOM84 , message=file_cache is only supported with oauth2client<4.0.0
+2021-12-22 12:00:10 India Standard Time, uvicorn.error, 15744, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-22 12:00:10 India Standard Time, uvicorn.error, 15744, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-22 12:00:10 India Standard Time, uvicorn.error, 15744, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-22 12:00:10 India Standard Time, uvicorn.error, 15744, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [15744]
+2021-12-22 12:00:51 India Standard Time, uvicorn.error, 20872, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [20872]
+2021-12-22 12:00:51 India Standard Time, uvicorn.error, 20872, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-22 12:00:51 India Standard Time, uvicorn.error, 20872, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-22 12:00:51 India Standard Time, uvicorn.error, 20872, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-22 12:01:00 India Standard Time, google_auth_oauthlib.flow, 20872, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\google_auth_oauthlib\flow.py, lineno=494, request_span_id=3JB5BA1B1M , message="GET /?state=Ebq5FAJWSofm1TqLqLrZp7k7QrBQ1y&code=4%2F0AX4XfWglULTly246332C4DFejVzOYrBWkYR7ZKlkmpDUn5wCmEIG2LIwbvFgMQPH89WuRQ&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.courses.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.rosters.readonly HTTP/1.1" 200 65
+2021-12-22 12:01:01 India Standard Time, googleapiclient.discovery_cache, 20872, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\googleapiclient\discovery_cache\__init__.py, lineno=49, request_span_id=3JB5BA1B1M , message=file_cache is only supported with oauth2client<4.0.0
+2021-12-22 12:01:07 India Standard Time, uvicorn.error, 20872, ERROR, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py, lineno=376, request_span_id=3JB5BA1B1M , message=Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\context_set_request_middleware.py", line 31, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\request_log_middleware.py", line 30, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\GoogleClassroom\google_classroom.py", line 150, in list_google_courses
+    courses_list = google_classroom_courses(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\GoogleClassroom\google_classroom.py", line 133, in google_classroom_courses
+    student_dict['email'] = student['profile']['emailAdrress']
+KeyError: 'emailAdrress'
+2021-12-22 12:01:52 India Standard Time, uvicorn.error, 20872, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-22 12:01:52 India Standard Time, uvicorn.error, 20872, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-22 12:01:52 India Standard Time, uvicorn.error, 20872, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-22 12:01:52 India Standard Time, uvicorn.error, 20872, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [20872]
+2021-12-22 12:02:46 India Standard Time, uvicorn.error, 31820, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [31820]
+2021-12-22 12:02:46 India Standard Time, uvicorn.error, 31820, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-22 12:02:46 India Standard Time, uvicorn.error, 31820, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-22 12:02:46 India Standard Time, uvicorn.error, 31820, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-22 12:03:18 India Standard Time, google_auth_oauthlib.flow, 31820, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\google_auth_oauthlib\flow.py, lineno=494, request_span_id=FQOREL09OR , message="GET /?state=DcAuQUdZ7IVWq06kj87VDe2VqE67W6&code=4%2F0AX4XfWjgiGqPOIsDmXJV_AFv0ileRNX2duBIWuvf6aZdXfff6ASIgjbQ3WV6y2PjmULJUA&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.courses.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.rosters.readonly HTTP/1.1" 200 65
+2021-12-22 12:03:18 India Standard Time, googleapiclient.discovery_cache, 31820, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\googleapiclient\discovery_cache\__init__.py, lineno=49, request_span_id=FQOREL09OR , message=file_cache is only supported with oauth2client<4.0.0
+2021-12-22 12:03:22 India Standard Time, uvicorn.error, 31820, ERROR, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py, lineno=376, request_span_id=FQOREL09OR , message=Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\context_set_request_middleware.py", line 31, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\request_log_middleware.py", line 30, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\GoogleClassroom\google_classroom.py", line 151, in list_google_courses
+    courses_list = google_classroom_courses(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\GoogleClassroom\google_classroom.py", line 133, in google_classroom_courses
+    student_dict['email'] = student['profile']['emailAddress']
+KeyError: 'emailAddress'
+2021-12-22 12:03:45 India Standard Time, uvicorn.error, 31820, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-22 12:03:45 India Standard Time, uvicorn.error, 31820, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-22 12:03:45 India Standard Time, uvicorn.error, 31820, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-22 12:03:45 India Standard Time, uvicorn.error, 31820, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [31820]
+2021-12-22 12:04:27 India Standard Time, uvicorn.error, 31076, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [31076]
+2021-12-22 12:04:27 India Standard Time, uvicorn.error, 31076, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-22 12:04:27 India Standard Time, uvicorn.error, 31076, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-22 12:04:27 India Standard Time, uvicorn.error, 31076, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-22 12:04:38 India Standard Time, google_auth_oauthlib.flow, 31076, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\google_auth_oauthlib\flow.py, lineno=494, request_span_id=N84DB86A6Q , message="GET /?state=rPscAa6Ft1mi57cRzXry0lvch3JNwz&code=4%2F0AX4XfWikHIwZFT2BO5_64PrCRkORQvV70rMJt1P5_j71XGOCvgcLLPe8vX9Bs05Yy2sQpA&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.courses.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.rosters.readonly HTTP/1.1" 200 65
+2021-12-22 12:04:39 India Standard Time, googleapiclient.discovery_cache, 31076, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\googleapiclient\discovery_cache\__init__.py, lineno=49, request_span_id=N84DB86A6Q , message=file_cache is only supported with oauth2client<4.0.0
+2021-12-22 12:06:00 India Standard Time, uvicorn.error, 31076, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-22 12:06:00 India Standard Time, uvicorn.error, 31076, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-22 12:06:00 India Standard Time, uvicorn.error, 31076, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-22 12:06:00 India Standard Time, uvicorn.error, 31076, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [31076]
+2021-12-22 12:06:40 India Standard Time, uvicorn.error, 20440, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [20440]
+2021-12-22 12:06:40 India Standard Time, uvicorn.error, 20440, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-22 12:06:40 India Standard Time, uvicorn.error, 20440, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-22 12:06:40 India Standard Time, uvicorn.error, 20440, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-22 12:07:34 India Standard Time, google_auth_oauthlib.flow, 20440, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\google_auth_oauthlib\flow.py, lineno=494, request_span_id=8Y00V195EB , message="GET /?state=6QfxPiVcNqlySbiU2kjcUXr9ejXpeR&code=4/0AX4XfWjAHExTjte8MESNC0CEnH-JGRVUWeYdIx5Vx6fS1coZAsDFG8YYfF3s1AdfWtOVzA&scope=https://www.googleapis.com/auth/classroom.profile.emails%20https://www.googleapis.com/auth/classroom.courses.readonly%20https://www.googleapis.com/auth/classroom.rosters.readonly HTTP/1.1" 200 65
+2021-12-22 12:07:35 India Standard Time, googleapiclient.discovery_cache, 20440, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\googleapiclient\discovery_cache\__init__.py, lineno=49, request_span_id=8Y00V195EB , message=file_cache is only supported with oauth2client<4.0.0
+2021-12-22 12:08:40 India Standard Time, uvicorn.error, 20440, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-22 12:08:41 India Standard Time, uvicorn.error, 20440, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-22 12:08:41 India Standard Time, uvicorn.error, 20440, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-22 12:08:41 India Standard Time, uvicorn.error, 20440, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [20440]
+2021-12-22 12:09:21 India Standard Time, uvicorn.error, 3396, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [3396]
+2021-12-22 12:09:21 India Standard Time, uvicorn.error, 3396, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-22 12:09:21 India Standard Time, uvicorn.error, 3396, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-22 12:09:21 India Standard Time, uvicorn.error, 3396, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-22 12:09:41 India Standard Time, google_auth_oauthlib.flow, 3396, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\google_auth_oauthlib\flow.py, lineno=494, request_span_id=J7AO8IJIGW , message="GET /?state=FfCp8bL1uupoQbJkpnn7CLQ3xEVvf1&code=4%2F0AX4XfWgAIXhMoIyj5rVzxAdC8Qolzyt8Y0LYgMG0F2QEcA8v7UKe_jBf_4DAUaRbdjcMvg&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.courses.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.rosters.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.profile.emails HTTP/1.1" 200 65
+2021-12-22 12:09:42 India Standard Time, googleapiclient.discovery_cache, 3396, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\googleapiclient\discovery_cache\__init__.py, lineno=49, request_span_id=J7AO8IJIGW , message=file_cache is only supported with oauth2client<4.0.0
+2021-12-22 12:12:51 India Standard Time, google_auth_oauthlib.flow, 3396, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\google_auth_oauthlib\flow.py, lineno=494, request_span_id=4U5ALGB96Y , message="GET /?state=hEqMGUh7Yw2xyk3uu0NW4z3MBBhmyk&code=4%2F0AX4XfWi0de3cdxBNyR8D-5FPQWJKstqzPuua8xY3flNt6TKx9-PuYPIeTNEvz21FQh709g&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.courses.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.rosters.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.profile.emails HTTP/1.1" 200 65
+2021-12-22 12:12:52 India Standard Time, googleapiclient.discovery_cache, 3396, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\googleapiclient\discovery_cache\__init__.py, lineno=49, request_span_id=4U5ALGB96Y , message=file_cache is only supported with oauth2client<4.0.0
+2021-12-22 12:13:11 India Standard Time, google_auth_oauthlib.flow, 3396, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\google_auth_oauthlib\flow.py, lineno=494, request_span_id=IZPW14D1CB , message="GET /?state=qmkKw4w1ciMpT90kHd9Wb60hw4j0CZ&code=4%2F0AX4XfWgKb3NRIvsbHS5FkIDE2I5qus0w9olNe2XmWtfamBaGz0t5Q3DMAzRgaY7TnLFaHw&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.courses.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.rosters.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.profile.emails HTTP/1.1" 200 65
+2021-12-22 12:13:11 India Standard Time, googleapiclient.discovery_cache, 3396, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\googleapiclient\discovery_cache\__init__.py, lineno=49, request_span_id=IZPW14D1CB , message=file_cache is only supported with oauth2client<4.0.0
+2021-12-22 12:19:21 India Standard Time, google_auth_oauthlib.flow, 3396, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\google_auth_oauthlib\flow.py, lineno=494, request_span_id=QKWLB8AV2X , message="GET /?state=CAuJ95pA07s6dbmJnMHGSLlAuXgZ0T&code=4%2F0AX4XfWjOzRAv-KYaLOJ2dYwY_HeiUrf_FRt92nmdODb8ZCIIj6nsE-7ZOqIfbvp64lvCgA&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.courses.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.rosters.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.profile.emails HTTP/1.1" 200 65
+2021-12-22 12:19:22 India Standard Time, googleapiclient.discovery_cache, 3396, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\googleapiclient\discovery_cache\__init__.py, lineno=49, request_span_id=QKWLB8AV2X , message=file_cache is only supported with oauth2client<4.0.0
+2021-12-22 12:19:24 India Standard Time, uvicorn.error, 3396, ERROR, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py, lineno=376, request_span_id=QKWLB8AV2X , message=Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\context_set_request_middleware.py", line 31, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\request_log_middleware.py", line 30, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\GoogleClassroom\google_classroom.py", line 166, in connect_google_courses
+    courses_list = google_classroom_courses(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\GoogleClassroom\google_classroom.py", line 107, in google_classroom_courses
+    if class_crud.get_teacher_classes_by_google_id(db=db, teacher_id=teacher_id, google_id=course['id']) is not None:
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\class_crud.py", line 152, in get_teacher_classes_by_google_id
+    db_class = db.query(models.Classes).filter(models.Classes.teacher_id == teacher_id,models.Classes.google_id == google_id).first()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\sqlalchemy\orm\query.py", line 2762, in first
+    return self.limit(1)._iter().first()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\sqlalchemy\orm\query.py", line 2846, in _iter
+    result = self.session.execute(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1689, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1583, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 323, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1452, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1814, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1995, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1771, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\sqlalchemy\engine\default.py", line 717, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.OperationalError: (MySQLdb._exceptions.OperationalError) (2013, 'Lost connection to MySQL server during query')
+[SQL: SELECT test_classes.id AS test_classes_id, test_classes.google_id AS test_classes_google_id, test_classes.source AS test_classes_source, test_classes.`status` AS test_classes_status, test_classes.name AS test_classes_name, test_classes.code AS test_classes_code, test_classes.teacher_id AS test_classes_teacher_id, test_classes.created_at AS test_classes_created_at, test_classes.updated_at AS test_classes_updated_at, test_classes.student_count AS test_classes_student_count 
+FROM test_classes 
+WHERE test_classes.teacher_id = %s AND test_classes.google_id = %s 
+ LIMIT %s]
+[parameters: ('0375b704-91b2-4ff6-afca-8418d54e0d9d', '402765136934', 1)]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2021-12-22 12:20:17 India Standard Time, google_auth_oauthlib.flow, 3396, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\google_auth_oauthlib\flow.py, lineno=494, request_span_id=YLBHAMU0LZ , message="GET /?state=BfycW4yvJ19VuZGkzNih9XfFZVZrRU&code=4%2F0AX4XfWi6byM3SYdojDkP9WWc5L3tJoYSulQN4Ex54CzsjI3JujyJcS2vh2DakBpRNefv-A&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.courses.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.rosters.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.profile.emails HTTP/1.1" 200 65
+2021-12-22 12:20:18 India Standard Time, googleapiclient.discovery_cache, 3396, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\googleapiclient\discovery_cache\__init__.py, lineno=49, request_span_id=YLBHAMU0LZ , message=file_cache is only supported with oauth2client<4.0.0
+2021-12-22 12:20:45 India Standard Time, uvicorn.error, 3396, ERROR, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py, lineno=376, request_span_id=YLBHAMU0LZ , message=Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 26, in __call__
+    await response(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\responses.py", line 224, in __call__
+    await run_until_first_complete(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\concurrency.py", line 24, in run_until_first_complete
+    [task.result() for task in done]
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\concurrency.py", line 24, in <listcomp>
+    [task.result() for task in done]
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\responses.py", line 216, in stream_response
+    async for chunk in self.body_iterator:
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 56, in body_stream
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 26, in __call__
+    await response(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\responses.py", line 224, in __call__
+    await run_until_first_complete(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\concurrency.py", line 24, in run_until_first_complete
+    [task.result() for task in done]
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\concurrency.py", line 24, in <listcomp>
+    [task.result() for task in done]
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\responses.py", line 216, in stream_response
+    async for chunk in self.body_iterator:
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 56, in body_stream
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 86, in __call__
+    raise RuntimeError(msg) from exc
+RuntimeError: Caught handled exception, but response already started.
+2021-12-22 12:21:10 India Standard Time, google_auth_oauthlib.flow, 3396, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\google_auth_oauthlib\flow.py, lineno=494, request_span_id=AHD47FZQ6E , message="GET /?state=cWA3A26wyggePjNFrXlxijhHI9WQo9&code=4%2F0AX4XfWiSnM1OtRvSN6n1NZ0HGc-y4phlXiilvyAoqeAQqABai88Xt8CMShvzrOeQ_UzLxw&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.courses.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.rosters.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.profile.emails HTTP/1.1" 200 65
+2021-12-22 12:21:10 India Standard Time, googleapiclient.discovery_cache, 3396, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\googleapiclient\discovery_cache\__init__.py, lineno=49, request_span_id=AHD47FZQ6E , message=file_cache is only supported with oauth2client<4.0.0
+2021-12-22 12:22:20 India Standard Time, google_auth_oauthlib.flow, 3396, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\google_auth_oauthlib\flow.py, lineno=494, request_span_id=99HMMYNURF , message="GET /?state=WH3AbXC7sGyfIjl9RBXUgOXpMwMlVj&code=4%2F0AX4XfWhvxgGwnYIt-wCFOKa4tnT22bz8dXsIc3xkqnFfQtAzxQofnqASqMemLtpRu3j9eg&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.courses.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.rosters.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.profile.emails HTTP/1.1" 200 65
+2021-12-22 12:22:21 India Standard Time, googleapiclient.discovery_cache, 3396, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\googleapiclient\discovery_cache\__init__.py, lineno=49, request_span_id=99HMMYNURF , message=file_cache is only supported with oauth2client<4.0.0
+2021-12-22 12:35:08 India Standard Time, uvicorn.error, 14992, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [14992]
+2021-12-22 12:35:08 India Standard Time, uvicorn.error, 14992, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-22 12:35:08 India Standard Time, uvicorn.error, 14992, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-22 12:35:08 India Standard Time, uvicorn.error, 14992, ERROR, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=167, request_span_id=None , message=[Errno 10048] error while attempting to bind on address ('127.0.0.1', 5000): only one usage of each socket address (protocol/network address/port) is normally permitted
+2021-12-22 12:35:08 India Standard Time, uvicorn.error, 14992, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-22 12:35:08 India Standard Time, uvicorn.error, 14992, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-22 12:36:05 India Standard Time, uvicorn.error, 35448, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [35448]
+2021-12-22 12:36:05 India Standard Time, uvicorn.error, 35448, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-22 12:36:05 India Standard Time, uvicorn.error, 35448, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-22 12:36:05 India Standard Time, uvicorn.error, 35448, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-22 12:36:20 India Standard Time, google_auth_oauthlib.flow, 35448, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\google_auth_oauthlib\flow.py, lineno=494, request_span_id=6P4LW8A5HZ , message="GET /?state=srS94rxA0gghcXf11w3yUJNoDqAOQZ&code=4%2F0AX4XfWicjUlzsOr2ZjhzoSKAgWkFuTgp85Dswk071l_3G7mJEozZP9y9fMjdEn4NTwyCMQ&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.courses.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.rosters.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fclassroom.profile.emails HTTP/1.1" 200 65
+2021-12-22 12:36:21 India Standard Time, googleapiclient.discovery_cache, 35448, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\googleapiclient\discovery_cache\__init__.py, lineno=49, request_span_id=6P4LW8A5HZ , message=file_cache is only supported with oauth2client<4.0.0
+2021-12-22 12:36:51 India Standard Time, googleapiclient.discovery_cache, 35448, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\googleapiclient\discovery_cache\__init__.py, lineno=49, request_span_id=13TDL4GE5S , message=file_cache is only supported with oauth2client<4.0.0
+2021-12-22 12:37:41 India Standard Time, googleapiclient.discovery_cache, 35448, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\googleapiclient\discovery_cache\__init__.py, lineno=49, request_span_id=ELVXC1Z12F , message=file_cache is only supported with oauth2client<4.0.0
+2021-12-22 12:39:21 India Standard Time, uvicorn.error, 35448, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-22 12:39:21 India Standard Time, uvicorn.error, 35448, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-22 12:39:21 India Standard Time, uvicorn.error, 35448, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-22 12:39:21 India Standard Time, uvicorn.error, 35448, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [35448]
+2021-12-22 12:41:31 India Standard Time, uvicorn.error, 33248, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [33248]
+2021-12-22 12:41:31 India Standard Time, uvicorn.error, 33248, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-22 12:41:31 India Standard Time, uvicorn.error, 33248, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-22 12:41:31 India Standard Time, uvicorn.error, 33248, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://0.0.0.0:5000 (Press CTRL+C to quit)
+2021-12-22 12:41:36 India Standard Time, uvicorn.error, 33248, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-22 12:41:36 India Standard Time, uvicorn.error, 33248, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-22 12:41:36 India Standard Time, uvicorn.error, 33248, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-22 12:41:36 India Standard Time, uvicorn.error, 33248, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [33248]
+2021-12-22 12:43:10 India Standard Time, uvicorn.error, 9632, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [9632]
+2021-12-22 12:43:10 India Standard Time, uvicorn.error, 9632, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-22 12:43:10 India Standard Time, uvicorn.error, 9632, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-22 12:43:10 India Standard Time, uvicorn.error, 9632, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)

@@ -1,0 +1,99 @@
+version: 1
+disable_existing_loggers: false
+formatters:
+  formatter_1:
+    format: '%(asctime)s, %(name)s, %(process)s, %(levelname)s, path=%(pathname)s, lineno=%(lineno)d, request_span_id=%(request_span_id)s , message=%(message)s'
+    datefmt: '%Y-%m-%d %H:%M:%S %Z'
+    (): config.log_formatter.GMTFormatter 
+  formatter_2:
+    format: "%(levelname)s <PID %(process)d:%(processName)s> %(name)s.%(funcName)s(): %(message)s"
+  formatter_3:
+    # format: '%(asctime)s | %(name)s | %(levelname)s | %(message)s'
+    # datefmt: '%a, %d %b %Y %H:%M:%S %Z'
+    (): config.log_formatter.JsonFormatter
+filters:
+  custom_filter:
+    (): config.log_formatter.CustomFilter
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: NOTSET
+    formatter: formatter_1
+    filters: [custom_filter]
+    stream: ext://sys.stdout
+  all_file:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: NOTSET
+    formatter: formatter_1
+    filename: ./logs/logs.log
+    filters: [custom_filter]
+    when: midnight
+    utc: true
+    backupCount: 10
+    encoding: utf8
+  debug_file:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: DEBUG
+    formatter: formatter_1
+    filename: ./logs/debug.log
+    when: midnight
+    filters: [custom_filter]
+    utc: true
+    backupCount: 10
+    encoding: utf8
+  info_file:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: INFO
+    formatter: formatter_1
+    filename: ./logs/info.log
+    when: midnight
+    filters: [custom_filter]
+    utc: true
+    backupCount: 10
+    encoding: utf8
+  warning_file:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: WARNING
+    formatter: formatter_1
+    filename: ./logs/warn.log
+    when: midnight
+    filters: [custom_filter]
+    utc: true
+    backupCount: 10
+    encoding: utf8
+  error_file:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: ERROR
+    formatter: formatter_1
+    filename: ./logs/error.log
+    when: midnight
+    filters: [custom_filter]
+    utc: true
+    backupCount: 10
+    encoding: utf8
+  critical_file:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: CRITICAL
+    formatter: formatter_1
+    filename: ./logs/critical.log
+    when: midnight
+    filters: [custom_filter]
+    utc: true
+    backupCount: 10
+    encoding: utf8
+ # loggers:
+#   sampleLogger:
+#     level: DEBUG
+#     handlers: [file]
+#     propagate: no
+root:
+  level: NOTSET
+  handlers: 
+    - all_file
+    - debug_file
+    - info_file
+    - warning_file
+    - error_file
+    - critical_file
+    - console
+  propogate: yes

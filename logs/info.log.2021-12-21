@@ -1,0 +1,821 @@
+2021-12-21 09:19:05 India Standard Time, uvicorn.error, 5048, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [5048]
+2021-12-21 09:19:05 India Standard Time, uvicorn.error, 5048, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-21 09:19:05 India Standard Time, uvicorn.error, 5048, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-21 09:19:05 India Standard Time, uvicorn.error, 5048, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-21 09:20:53 India Standard Time, uvicorn.error, 5048, ERROR, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py, lineno=376, request_span_id=EMA7K1BV64 , message=Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\context_set_request_middleware.py", line 31, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\request_log_middleware.py", line 30, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\classes.py", line 256, in upload_spreadsheet_to_multiple_classes
+    spreadsheet_util = SpreadsheetUtil(file = file)
+TypeError: SpreadsheetUtil() takes no arguments
+2021-12-21 09:23:58 India Standard Time, uvicorn.error, 5048, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-21 09:23:58 India Standard Time, uvicorn.error, 5048, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-21 09:23:58 India Standard Time, uvicorn.error, 5048, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-21 09:23:58 India Standard Time, uvicorn.error, 5048, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [5048]
+2021-12-21 09:24:40 India Standard Time, uvicorn.error, 22160, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [22160]
+2021-12-21 09:24:40 India Standard Time, uvicorn.error, 22160, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-21 09:24:40 India Standard Time, uvicorn.error, 22160, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-21 09:24:40 India Standard Time, uvicorn.error, 22160, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-21 09:25:08 India Standard Time, uvicorn.error, 22160, ERROR, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py, lineno=376, request_span_id=OHCUST5VNC , message=Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\context_set_request_middleware.py", line 31, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\request_log_middleware.py", line 30, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\classes.py", line 258, in upload_spreadsheet_to_multiple_classes
+    valid_students = spreadsheet_util.extract()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\spreadsheet_util.py", line 146, in extract
+    if self.validate_columns(student_data = student_data):
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\spreadsheet_util.py", line 56, in validate_columns
+    for col in student_data.columns:
+AttributeError: 'coroutine' object has no attribute 'columns'
+2021-12-21 09:26:39 India Standard Time, uvicorn.error, 22160, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-21 09:26:39 India Standard Time, uvicorn.error, 22160, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-21 09:26:39 India Standard Time, uvicorn.error, 22160, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-21 09:26:39 India Standard Time, uvicorn.error, 22160, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [22160]
+2021-12-21 09:27:24 India Standard Time, uvicorn.error, 15776, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [15776]
+2021-12-21 09:27:24 India Standard Time, uvicorn.error, 15776, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-21 09:27:24 India Standard Time, uvicorn.error, 15776, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-21 09:27:24 India Standard Time, uvicorn.error, 15776, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-21 09:27:28 India Standard Time, uvicorn.error, 15776, ERROR, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py, lineno=376, request_span_id=FIIHPDWV7T , message=Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\context_set_request_middleware.py", line 31, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\request_log_middleware.py", line 30, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\classes.py", line 258, in upload_spreadsheet_to_multiple_classes
+    valid_students = spreadsheet_util.extract()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\spreadsheet_util.py", line 144, in extract
+    x,y,student_data = self.extract_spreadsheet_data()
+TypeError: cannot unpack non-iterable coroutine object
+2021-12-21 09:27:50 India Standard Time, uvicorn.error, 15776, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-21 09:27:50 India Standard Time, uvicorn.error, 15776, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-21 09:27:50 India Standard Time, uvicorn.error, 15776, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-21 09:27:50 India Standard Time, uvicorn.error, 15776, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [15776]
+2021-12-21 09:28:31 India Standard Time, uvicorn.error, 28628, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [28628]
+2021-12-21 09:28:31 India Standard Time, uvicorn.error, 28628, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-21 09:28:31 India Standard Time, uvicorn.error, 28628, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-21 09:28:31 India Standard Time, uvicorn.error, 28628, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-21 09:28:41 India Standard Time, uvicorn.error, 28628, ERROR, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py, lineno=376, request_span_id=9TVN1BAURL , message=Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\context_set_request_middleware.py", line 31, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\request_log_middleware.py", line 30, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\classes.py", line 258, in upload_spreadsheet_to_multiple_classes
+    valid_students = spreadsheet_util.extract()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\spreadsheet_util.py", line 144, in extract
+    student_data = self.extract_spreadsheet_data()[2]
+TypeError: 'coroutine' object is not subscriptable
+2021-12-21 09:31:19 India Standard Time, uvicorn.error, 28628, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-21 09:31:19 India Standard Time, uvicorn.error, 28628, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-21 09:31:19 India Standard Time, uvicorn.error, 28628, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-21 09:31:19 India Standard Time, uvicorn.error, 28628, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [28628]
+2021-12-21 09:32:08 India Standard Time, uvicorn.error, 30392, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [30392]
+2021-12-21 09:32:08 India Standard Time, uvicorn.error, 30392, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-21 09:32:08 India Standard Time, uvicorn.error, 30392, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-21 09:32:08 India Standard Time, uvicorn.error, 30392, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-21 09:32:12 India Standard Time, uvicorn.error, 30392, ERROR, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py, lineno=376, request_span_id=OOOHMH0FDU , message=Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\context_set_request_middleware.py", line 31, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\request_log_middleware.py", line 30, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\classes.py", line 258, in upload_spreadsheet_to_multiple_classes
+    valid_students = spreadsheet_util.extract()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\spreadsheet_util.py", line 144, in extract
+    student_data = self.extract_spreadsheet_data()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\spreadsheet_util.py", line 40, in extract_spreadsheet_data
+    logger.debug("Following Exception occured while extracting data : "+e)
+TypeError: can only concatenate str (not "ValueError") to str
+2021-12-21 09:33:12 India Standard Time, uvicorn.error, 30392, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-21 09:33:12 India Standard Time, uvicorn.error, 30392, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-21 09:33:12 India Standard Time, uvicorn.error, 30392, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-21 09:33:12 India Standard Time, uvicorn.error, 30392, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [30392]
+2021-12-21 09:33:54 India Standard Time, uvicorn.error, 9844, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [9844]
+2021-12-21 09:33:54 India Standard Time, uvicorn.error, 9844, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-21 09:33:54 India Standard Time, uvicorn.error, 9844, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-21 09:33:54 India Standard Time, uvicorn.error, 9844, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-21 09:36:37 India Standard Time, uvicorn.error, 9844, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-21 09:36:37 India Standard Time, uvicorn.error, 9844, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-21 09:36:37 India Standard Time, uvicorn.error, 9844, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-21 09:36:37 India Standard Time, uvicorn.error, 9844, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [9844]
+2021-12-21 09:37:21 India Standard Time, uvicorn.error, 32564, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [32564]
+2021-12-21 09:37:21 India Standard Time, uvicorn.error, 32564, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-21 09:37:21 India Standard Time, uvicorn.error, 32564, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-21 09:37:21 India Standard Time, uvicorn.error, 32564, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-21 09:44:05 India Standard Time, uvicorn.error, 32564, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-21 09:44:05 India Standard Time, uvicorn.error, 32564, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-21 09:44:05 India Standard Time, uvicorn.error, 32564, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-21 09:44:05 India Standard Time, uvicorn.error, 32564, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [32564]
+2021-12-21 09:44:47 India Standard Time, uvicorn.error, 6176, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [6176]
+2021-12-21 09:44:47 India Standard Time, uvicorn.error, 6176, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-21 09:44:47 India Standard Time, uvicorn.error, 6176, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-21 09:44:47 India Standard Time, uvicorn.error, 6176, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-21 09:44:57 India Standard Time, uvicorn.error, 6176, ERROR, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py, lineno=376, request_span_id=DPQD05ERBR , message=Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\context_set_request_middleware.py", line 31, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\request_log_middleware.py", line 30, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\classes.py", line 276, in upload_spreadsheet_to_multiple_classes
+    for student in valid_students:
+TypeError: 'coroutine' object is not iterable
+2021-12-21 09:45:59 India Standard Time, uvicorn.error, 6176, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-21 09:45:59 India Standard Time, uvicorn.error, 6176, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-21 09:45:59 India Standard Time, uvicorn.error, 6176, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-21 09:45:59 India Standard Time, uvicorn.error, 6176, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [6176]
+2021-12-21 09:46:41 India Standard Time, uvicorn.error, 21484, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [21484]
+2021-12-21 09:46:41 India Standard Time, uvicorn.error, 21484, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-21 09:46:41 India Standard Time, uvicorn.error, 21484, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-21 09:46:41 India Standard Time, uvicorn.error, 21484, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-21 09:47:28 India Standard Time, uvicorn.error, 21484, ERROR, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py, lineno=376, request_span_id=5BODBTKIXR , message=Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\context_set_request_middleware.py", line 31, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\request_log_middleware.py", line 30, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\classes.py", line 258, in upload_spreadsheet_to_multiple_classes
+    valid_students = await spreadsheet_util.extract()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\spreadsheet_util.py", line 147, in extract
+    valid_data = self.validate_data(student_data = student_data)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\spreadsheet_util.py", line 95, in validate_data
+    if str(student['First name']) != "nan" and str(student['Last name']) != "nan" and str(student['Email']) != "nan" and self.validate_email(str(student['Email'])):
+TypeError: validate_email() takes 1 positional argument but 2 were given
+2021-12-21 09:51:37 India Standard Time, uvicorn.error, 21484, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-21 09:51:38 India Standard Time, uvicorn.error, 21484, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-21 09:51:38 India Standard Time, uvicorn.error, 21484, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-21 09:51:38 India Standard Time, uvicorn.error, 21484, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [21484]
+2021-12-21 09:52:19 India Standard Time, uvicorn.error, 29448, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [29448]
+2021-12-21 09:52:19 India Standard Time, uvicorn.error, 29448, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-21 09:52:19 India Standard Time, uvicorn.error, 29448, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-21 09:52:19 India Standard Time, uvicorn.error, 29448, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-21 09:56:28 India Standard Time, uvicorn.error, 29448, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-21 09:56:29 India Standard Time, uvicorn.error, 29448, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-21 09:56:29 India Standard Time, uvicorn.error, 29448, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-21 09:56:29 India Standard Time, uvicorn.error, 29448, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [29448]
+2021-12-21 09:57:20 India Standard Time, uvicorn.error, 24896, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [24896]
+2021-12-21 09:57:20 India Standard Time, uvicorn.error, 24896, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-21 09:57:20 India Standard Time, uvicorn.error, 24896, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-21 09:57:20 India Standard Time, uvicorn.error, 24896, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-21 10:04:36 India Standard Time, uvicorn.error, 24896, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-21 10:04:36 India Standard Time, uvicorn.error, 24896, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-21 10:04:36 India Standard Time, uvicorn.error, 24896, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-21 10:04:36 India Standard Time, uvicorn.error, 24896, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [24896]
+2021-12-21 10:05:19 India Standard Time, uvicorn.error, 17504, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [17504]
+2021-12-21 10:05:19 India Standard Time, uvicorn.error, 17504, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-21 10:05:19 India Standard Time, uvicorn.error, 17504, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-21 10:05:19 India Standard Time, uvicorn.error, 17504, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-21 10:05:51 India Standard Time, uvicorn.error, 17504, ERROR, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py, lineno=376, request_span_id=97ITDIKWCV , message=Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\context_set_request_middleware.py", line 31, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\request_log_middleware.py", line 30, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\classes.py", line 252, in upload_spreadsheet_to_multiple_classes
+    class_id, file.content_type))
+AttributeError: 'str' object has no attribute 'content_type'
+2021-12-21 10:11:19 India Standard Time, uvicorn.error, 17504, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-21 10:11:19 India Standard Time, uvicorn.error, 17504, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-21 10:11:19 India Standard Time, uvicorn.error, 17504, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-21 10:11:19 India Standard Time, uvicorn.error, 17504, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [17504]
+2021-12-21 10:11:59 India Standard Time, uvicorn.error, 21316, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [21316]
+2021-12-21 10:11:59 India Standard Time, uvicorn.error, 21316, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-21 10:11:59 India Standard Time, uvicorn.error, 21316, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-21 10:11:59 India Standard Time, uvicorn.error, 21316, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-21 10:12:53 India Standard Time, uvicorn.error, 21316, ERROR, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py, lineno=376, request_span_id=08X9HEBGKO , message=Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\context_set_request_middleware.py", line 31, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\request_log_middleware.py", line 30, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 86, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 142, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\classes.py", line 296, in upload_spreadsheet_to_multiple_classes
+    basic_student_response = BasicStudentResponse(uuid=db_student.uuid,
+  File "pydantic\main.py", line 406, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 1 validation error for BasicStudentResponse
+parents_email
+  value is not a valid email address (type=value_error.email)
+2021-12-21 10:38:25 India Standard Time, uvicorn.error, 21316, ERROR, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py, lineno=376, request_span_id=99EMVDWV4A , message=Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\context_set_request_middleware.py", line 31, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\request_log_middleware.py", line 30, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\classes.py", line 144, in get_all_classes_and_all_students
+    classes_response = class_crud.get_teacher_classes_details(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\class_crud.py", line 224, in get_teacher_classes_details
+    db_classes = get_my_classes(db,teacher_id)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\class_crud.py", line 37, in get_my_classes
+    db_classes = db.query(models.Classes).filter(models.Classes.teacher_id == teacher_id).all()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\sqlalchemy\orm\query.py", line 2711, in all
+    return self._iter().all()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\sqlalchemy\orm\query.py", line 2846, in _iter
+    result = self.session.execute(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1689, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1583, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 323, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1452, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1814, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1995, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1771, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\sqlalchemy\engine\default.py", line 717, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\MySQLdb\connections.py", line 259, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.OperationalError: (MySQLdb._exceptions.OperationalError) (2013, 'Lost connection to MySQL server during query')
+[SQL: SELECT test_classes.id AS test_classes_id, test_classes.google_id AS test_classes_google_id, test_classes.source AS test_classes_source, test_classes.`status` AS test_classes_status, test_classes.name AS test_classes_name, test_classes.code AS test_classes_code, test_classes.teacher_id AS test_classes_teacher_id, test_classes.created_at AS test_classes_created_at, test_classes.updated_at AS test_classes_updated_at, test_classes.student_count AS test_classes_student_count 
+FROM test_classes 
+WHERE test_classes.teacher_id = %s]
+[parameters: ('a01495e3-5183-4f1c-b12c-4f36ac9b19b4',)]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2021-12-21 10:47:55 India Standard Time, uvicorn.error, 21316, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-21 10:47:55 India Standard Time, uvicorn.error, 21316, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-21 10:47:55 India Standard Time, uvicorn.error, 21316, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-21 10:47:55 India Standard Time, uvicorn.error, 21316, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [21316]
+2021-12-21 10:48:39 India Standard Time, uvicorn.error, 7112, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [7112]
+2021-12-21 10:48:39 India Standard Time, uvicorn.error, 7112, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-21 10:48:39 India Standard Time, uvicorn.error, 7112, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-21 10:48:39 India Standard Time, uvicorn.error, 7112, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-21 10:48:53 India Standard Time, uvicorn.error, 7112, ERROR, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py, lineno=376, request_span_id=02455IPO72 , message=Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\context_set_request_middleware.py", line 31, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\request_log_middleware.py", line 30, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\classes.py", line 144, in get_all_classes_and_all_students
+    classes_response = class_crud.get_teacher_classes_details(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\class_crud.py", line 226, in get_teacher_classes_details
+    class_students = student_crud.get_students_by_class(db,db_class.id)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Students\student_crud.py", line 104, in get_students_by_class
+    student_response = StudentResponse(id=db_student.id,
+  File "pydantic\main.py", line 406, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 1 validation error for StudentResponse
+parents_email
+  none is not an allowed value (type=type_error.none.not_allowed)
+2021-12-21 10:48:57 India Standard Time, uvicorn.error, 7112, ERROR, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py, lineno=376, request_span_id=ODE5PG1IRW , message=Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 373, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\context_set_request_middleware.py", line 31, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\middlewares\request_log_middleware.py", line 30, in dispatch
+    response = await call_next(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 45, in call_next
+    task.result()
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\base.py", line 38, in coro
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\classes.py", line 144, in get_all_classes_and_all_students
+    classes_response = class_crud.get_teacher_classes_details(
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Classes\class_crud.py", line 226, in get_teacher_classes_details
+    class_students = student_crud.get_students_by_class(db,db_class.id)
+  File "C:\Users\KUNDAN\Desktop\TeacherDashboard\bytelearn-teacher-backend\teacher_dashboard\Students\student_crud.py", line 104, in get_students_by_class
+    student_response = StudentResponse(id=db_student.id,
+  File "pydantic\main.py", line 406, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 1 validation error for StudentResponse
+parents_email
+  none is not an allowed value (type=type_error.none.not_allowed)
+2021-12-21 10:51:48 India Standard Time, uvicorn.error, 7112, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-21 10:51:48 India Standard Time, uvicorn.error, 7112, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-21 10:51:48 India Standard Time, uvicorn.error, 7112, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-21 10:51:48 India Standard Time, uvicorn.error, 7112, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [7112]
+2021-12-21 10:52:28 India Standard Time, uvicorn.error, 32420, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [32420]
+2021-12-21 10:52:28 India Standard Time, uvicorn.error, 32420, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-21 10:52:28 India Standard Time, uvicorn.error, 32420, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-21 10:52:28 India Standard Time, uvicorn.error, 32420, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-21 10:58:32 India Standard Time, uvicorn.error, 32420, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-21 10:58:32 India Standard Time, uvicorn.error, 32420, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-21 10:58:32 India Standard Time, uvicorn.error, 32420, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-21 10:58:32 India Standard Time, uvicorn.error, 32420, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [32420]
+2021-12-21 10:59:13 India Standard Time, uvicorn.error, 28384, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [28384]
+2021-12-21 10:59:13 India Standard Time, uvicorn.error, 28384, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-21 10:59:13 India Standard Time, uvicorn.error, 28384, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-21 10:59:13 India Standard Time, uvicorn.error, 28384, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-21 11:26:08 India Standard Time, uvicorn.error, 28384, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-21 11:26:08 India Standard Time, uvicorn.error, 28384, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-21 11:26:08 India Standard Time, uvicorn.error, 28384, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-21 11:26:08 India Standard Time, uvicorn.error, 28384, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [28384]
+2021-12-21 11:26:50 India Standard Time, uvicorn.error, 20344, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=84, request_span_id=None , message=Started server process [20344]
+2021-12-21 11:26:50 India Standard Time, uvicorn.error, 20344, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=45, request_span_id=None , message=Waiting for application startup.
+2021-12-21 11:26:50 India Standard Time, uvicorn.error, 20344, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=59, request_span_id=None , message=Application startup complete.
+2021-12-21 11:26:50 India Standard Time, uvicorn.error, 20344, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=217, request_span_id=None , message=Uvicorn running on http://localhost:5000 (Press CTRL+C to quit)
+2021-12-21 11:29:36 India Standard Time, uvicorn.error, 20344, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=263, request_span_id=None , message=Shutting down
+2021-12-21 11:29:36 India Standard Time, uvicorn.error, 20344, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=64, request_span_id=None , message=Waiting for application shutdown.
+2021-12-21 11:29:36 India Standard Time, uvicorn.error, 20344, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\lifespan\on.py, lineno=75, request_span_id=None , message=Application shutdown complete.
+2021-12-21 11:29:36 India Standard Time, uvicorn.error, 20344, INFO, path=C:\Users\KUNDAN\Desktop\TeacherDashboard\venv\lib\site-packages\uvicorn\server.py, lineno=94, request_span_id=None , message=Finished server process [20344]
+2021-12-21 13:57:27 India Standard Time, sqlalchemy.pool.impl.QueuePool, 26808, ERROR, path=c:\users\kundan\desktop\teacherdashboard\venv\lib\site-packages\sqlalchemy\pool\base.py, lineno=708, request_span_id=2TCOIWJD3L , message=Exception during reset or similar
+Traceback (most recent call last):
+  File "c:\users\kundan\desktop\teacherdashboard\venv\lib\site-packages\sqlalchemy\pool\base.py", line 682, in _finalize_fairy
+    fairy._reset(pool)
+  File "c:\users\kundan\desktop\teacherdashboard\venv\lib\site-packages\sqlalchemy\pool\base.py", line 887, in _reset
+    pool._dialect.do_rollback(self)
+  File "c:\users\kundan\desktop\teacherdashboard\venv\lib\site-packages\sqlalchemy\engine\default.py", line 667, in do_rollback
+    dbapi_connection.rollback()
+MySQLdb._exceptions.OperationalError: (2013, 'Lost connection to MySQL server during query')
